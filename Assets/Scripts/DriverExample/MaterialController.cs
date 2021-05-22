@@ -96,18 +96,18 @@ public class MaterialController : MonoBehaviour
 
 	void OnEnable()
 	{
-			if(emissionStrengthDriver != null)
-			{
+		if(emissionStrengthDriver != null)
+		{
 			emissionStrengthDriver.ValueChangedEvent += HandleEmissionStrengthChange;
 		}
 	}
 
 	void OnDisable()
 	{
-			if(emissionStrengthDriver != null)
-			{
-				emissionStrengthDriver.ValueChangedEvent -= HandleEmissionStrengthChange;
-			}
+		if(emissionStrengthDriver != null)
+		{
+			emissionStrengthDriver.ValueChangedEvent -= HandleEmissionStrengthChange;
+		}
 	}
 
 	public void SetMaterialColor(Color targetColor)
